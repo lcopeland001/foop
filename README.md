@@ -122,7 +122,7 @@ Customize this ReadMe and the code comments in this project to read less like a 
 
 
 -- To Do list -- 
-[] Change Title name
+[x] Change Title name
 [] Add pages to nav bar
     - Home (Logo)
     - About us
