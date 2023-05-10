@@ -123,7 +123,7 @@ Customize this ReadMe and the code comments in this project to read less like a 
 
 -- To Do list -- 
 [x] Change Title name
-[] Add pages to nav bar
+[x] Add pages to nav bar
     - Home (Logo)
     - About us
     - Get Invoulved
@@ -131,6 +131,7 @@ Customize this ReadMe and the code comments in this project to read less like a 
     - Donate
 [] 
 [] Home (Logo)
+  - Create component
 [] About us
 [] Get Invoulved
 [] Contact

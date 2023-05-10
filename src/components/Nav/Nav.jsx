@@ -37,7 +37,23 @@ function Nav() {
         )}
 
         <Link className="navLink" to="/about">
-          About
+          Home
+        </Link>
+        
+        <Link className="navLink" to="/about">
+          About Us
+        </Link>
+
+        <Link className="navLink" to="/about">
+          Gen Involved
+        </Link>
+
+        <Link className="navLink" to="/about">
+          Contact
+        </Link>
+
+        <Link className="navLink" to="/about">
+          Donate
         </Link>
       </div>
     </div>
