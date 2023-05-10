@@ -13,6 +13,7 @@ import Footer from '../Footer/Footer';
 
 import ProtectedRoute from '../ProtectedRoute/ProtectedRoute';
 
+import HomePage from '../HomePage/HomePage';
 import AboutPage from '../AboutPage/AboutPage';
 import UserPage from '../UserPage/UserPage';
 import InfoPage from '../InfoPage/InfoPage';
@@ -38,6 +39,14 @@ function App() {
         <Switch>
           {/* Visiting localhost:3000 will redirect to localhost:3000/home */}
           <Redirect exact from="/" to="/home" />
+
+          <Route
+            // shows AboutPage at all times (logged in or not)
+            exact
+            path="/homepage"
+          >
+            <HomePage />
+          </Route>
 
           {/* Visiting localhost:3000/about will show the about page. */}
           <Route

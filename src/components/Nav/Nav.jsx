@@ -36,7 +36,7 @@ function Nav() {
           </>
         )}
 
-        <Link className="navLink" to="/about">
+        <Link className="navLink" to="/homepage">
           Home
         </Link>
         
@@ -44,15 +44,15 @@ function Nav() {
           About Us
         </Link>
 
-        <Link className="navLink" to="/about">
-          Gen Involved
+        <Link className="navLink" to="/getinvolved">
+          Get Involved
         </Link>
 
-        <Link className="navLink" to="/about">
+        <Link className="navLink" to="/contact">
           Contact
         </Link>
 
-        <Link className="navLink" to="/about">
+        <Link className="navLink" to="/donate">
           Donate
         </Link>
       </div>

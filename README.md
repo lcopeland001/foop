@@ -131,8 +131,10 @@ Customize this ReadMe and the code comments in this project to read less like a 
     - Donate
 [] 
 [] Home (Logo)
-  - Create component
-  - Conenct component to nav bar
+  - Display HomePage on DOM
+    - Create component
+    - Add to App.jsx
+    - Conenct component to nav bar
   - Add content to home 
 [] About us
 [] Get Invoulved
