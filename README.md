@@ -135,9 +135,14 @@ Customize this ReadMe and the code comments in this project to read less like a 
     - Create component
     - Add to App.jsx
     - Conenct component to nav bar
-  - Add content to home 
+  - Add content
 [] About us
-[] Get Invoulved
+[] Get Involved
+  - Display Get Involved on DOM
+    - Create component
+    - Add to App.jsx
+    - Conenct component to nav bar
+  - Add content
 [] Contact
 [] Donate
     - Create form for donation page

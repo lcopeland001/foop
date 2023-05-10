@@ -14,6 +14,7 @@ import Footer from '../Footer/Footer';
 import ProtectedRoute from '../ProtectedRoute/ProtectedRoute';
 
 import HomePage from '../HomePage/HomePage';
+import GetInvolvedPage from '../GetInvovledPage/GetInvovledPage'
 import AboutPage from '../AboutPage/AboutPage';
 import UserPage from '../UserPage/UserPage';
 import InfoPage from '../InfoPage/InfoPage';
@@ -41,7 +42,7 @@ function App() {
           <Redirect exact from="/" to="/home" />
 
           <Route
-            // shows AboutPage at all times (logged in or not)
+            // shows HomePage at all times (logged in or not)
             exact
             path="/homepage"
           >
@@ -55,6 +56,14 @@ function App() {
             path="/about"
           >
             <AboutPage />
+          </Route>
+
+          <Route
+            // shows GetInvolvedPage at all times (logged in or not)
+            exact
+            path="/getinvolved"
+          >
+            <GetInvolvedPage />
           </Route>
 
           {/* For protected routes, the view could show one of several things on the same route.
