@@ -132,6 +132,8 @@ Customize this ReadMe and the code comments in this project to read less like a 
 [] 
 [] Home (Logo)
   - Create component
+  - Conenct component to nav bar
+  - Add content to home 
 [] About us
 [] Get Invoulved
 [] Contact
