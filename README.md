@@ -150,6 +150,9 @@ Customize this ReadMe and the code comments in this project to read less like a 
     - Conenct component to nav bar
   - Add content
 [] Donate
-
-
-    - Create form for donation page
+  [x] - Display Donate on DOM
+    - Create component
+    - Add to App.jsx
+    - Conenct component to nav bar
+  [] - Add content
+  [] - Create form for donation page
