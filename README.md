@@ -138,11 +138,18 @@ Customize this ReadMe and the code comments in this project to read less like a 
   - Add content
 [] About us
 [] Get Involved
-  - Display Get Involved on DOM
+  [x] - Display Get Involved on DOM
     - Create component
     - Add to App.jsx
     - Conenct component to nav bar
   - Add content
 [] Contact
+  [x] - Display Contact on DOM
+    - Create component
+    - Add to App.jsx
+    - Conenct component to nav bar
+  - Add content
 [] Donate
+
+
     - Create form for donation page
