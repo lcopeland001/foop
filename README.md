@@ -122,6 +122,8 @@ Customize this ReadMe and the code comments in this project to read less like a 
 
 
 -- To Do list -- 
+[] SCOPE
+
 [x] Change Title name
 [x] Add pages to nav bar
     - Home (Logo)
@@ -131,28 +133,55 @@ Customize this ReadMe and the code comments in this project to read less like a 
     - Donate
 [] 
 [] Home (Logo)
-  - Display HomePage on DOM
+  [X] Display HomePage on DOM
     - Create component
     - Add to App.jsx
     - Conenct component to nav bar
-  - Add content
+  [] Add content
+    [] donate card
+    [] Pool Photo
+    [] Background
+  [] CSS
 [] About us
-[] Get Involved
-  [x] - Display Get Involved on DOM
+  [x] - Display Contact on DOM
     - Create component
     - Add to App.jsx
     - Conenct component to nav bar
-  - Add content
+  [] Add content
+    [] CSS
+
+[] Get Involved
+  [x] Display Get Involved on DOM
+    - Create component
+    - Add to App.jsx
+    - Conenct component to nav bar
+  [] Add content
 [] Contact
   [x] - Display Contact on DOM
     - Create component
     - Add to App.jsx
     - Conenct component to nav bar
-  - Add content
+  [] Add content
+  [] CSS
+
 [] Donate
-  [x] - Display Donate on DOM
+  [x] Display Donate on DOM
     - Create component
     - Add to App.jsx
     - Conenct component to nav bar
-  [] - Add content
-  [] - Create form for donation page
+  [] Add content
+  [] CSS
+  [] Create form for donation page
+  [] Sagas
+    [] POST
+    [] GET
+    [] PUT
+    [] DELETE 
+  [] Reducers
+  [] Routes 
+
+  [] SQL
+    [x] user
+    [x] doner_details
+    [x] user_details
+    [x] schalar_details
