@@ -180,7 +180,7 @@ Customize this ReadMe and the code comments in this project to read less like a 
   [] Reducers
   [] Routes 
 
-  [] SQL
+  [x] SQL
     [x] user
     [x] doner_details
     [x] user_details
