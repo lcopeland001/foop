@@ -172,9 +172,10 @@ Customize this ReadMe and the code comments in this project to read less like a 
   [] Add content
   [] CSS
   [] Create form for donation page
-  [] Sagas
+  [x] Create Reducer component
+  [] Create Saga component
     [] POST
-    [] GET
+    [x] GET
     [] PUT
     [] DELETE 
   [] Reducers
@@ -185,3 +186,7 @@ Customize this ReadMe and the code comments in this project to read less like a 
     [x] doner_details
     [x] user_details
     [x] schalar_details
+
+
+// Step 1: Create a new reducer and export it
+// SAGA STEP 1: Create a saga file and export it
