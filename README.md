@@ -174,12 +174,16 @@ Customize this ReadMe and the code comments in this project to read less like a 
   [] Create form for donation page
   [x] Create Reducer component
   [] Create Saga component
-    [] POST
+    [x] POST
     [x] GET
     [] PUT
     [] DELETE 
-  [] Reducers
-  [] Routes 
+  [] Create Server Routes
+    [] POST
+    [] GET
+    [] PUT
+    [] DELETE 
+  [] Payment API
 
   [x] SQL
     [x] user

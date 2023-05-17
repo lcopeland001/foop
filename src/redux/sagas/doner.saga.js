@@ -2,7 +2,15 @@ import axios from "axios";
 import { put, takelatest } from 'redux-saga/effects';
 
 // CREATE
-
+function* addDoner(action) {
+    try {
+        yield axios.post('/api/doner', { name: action.payload });
+        yield put({ type: 'FETCH_DONER_DETAILS' });
+    } catch (error) {
+        console.log('Add doner failed', error);
+        alert('Someting went wrong');
+    }
+}
 
 // READ
 function* fetchDonerDetails() {
@@ -22,7 +30,8 @@ function* fetchDonerDetails() {
 
 
 function* donerSaga() {
-    
+    yield takelatest('FETCH_DONER_DETAILS', fetchDonerDetails);
+    yield takelatest('ADD_DONER', addDoner);
 }
 
 export default donerSaga;
