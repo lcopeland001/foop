@@ -28,4 +28,4 @@ router.post('/', (req, res)=> {
     });
 })
 
-module.exportd = router;
+module.exports = router;

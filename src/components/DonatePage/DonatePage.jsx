@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 // This is one of our simplest components
 // It doesn't have local state,
@@ -6,6 +7,9 @@ import React from 'react';
 // or even care what the redux state is'
 
 function DonatePage() {
+  const donerDetails = useSelector(store => store.donerDetails);
+  
+  
   return (
     <div className="container">
       <div>

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { put, takelatest } from 'redux-saga/effects';
+import { put, takeLatest } from 'redux-saga/effects';
 
 // CREATE
 function* addDoner(action) {
@@ -30,8 +30,8 @@ function* fetchDonerDetails() {
 
 
 function* donerSaga() {
-    yield takelatest('FETCH_DONER_DETAILS', fetchDonerDetails);
-    yield takelatest('ADD_DONER', addDoner);
+    yield takeLatest('FETCH_DONER_DETAILS', fetchDonerDetails);
+    yield takeLatest('ADD_DONER', addDoner);
 }
 
 export default donerSaga;

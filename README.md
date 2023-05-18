@@ -122,7 +122,7 @@ Customize this ReadMe and the code comments in this project to read less like a 
 
 
 -- To Do list -- 
-[] SCOPE
+[] SCOPE (https://docs.google.com/document/d/1-ELZV5XX_AkIFzGq99nyJ48_7_w0ys1x/edit?usp=sharing&ouid=104371303682291307224&rtpof=true&sd=true)
   [] Description
   [] Wireframs
   [] Database
@@ -191,7 +191,6 @@ Customize this ReadMe and the code comments in this project to read less like a 
     [] PUT
     [] DELETE 
     [x] Add route to server.js
-  
 
 [x] SQL
   [x] user
@@ -200,10 +199,10 @@ Customize this ReadMe and the code comments in this project to read less like a 
   [x] schalar_details
 
 
+REDUCERS
 // Step 1: Create a new reducer and export it
 
 SAGAS
-
 // rootSaga is the primary saga.
 // It bundles up all of the other sagas so our project can use them.
 // This is imported in index.js as rootSaga
@@ -215,3 +214,5 @@ SAGAS
 // SAGA STEP 2: Import saga into root saga
 // SAGA STEP 3: Add new sagas to export default
 
+COMPONENETS
+// STEP 1: Create a component
