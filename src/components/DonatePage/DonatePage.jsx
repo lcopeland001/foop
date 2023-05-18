@@ -22,11 +22,24 @@ function DonatePage() {
     dispatch({ type: 'FETCH_DONER_DETAILS'});
   };
 
+  const addDonerDetails = (e) => {
+    e.preventDefault();
+    dispatch({ type: 'ADD_DONER', 
+                payload: donerFirstName 
+              });
+  };
+
   return (
     <div className="container">
-      <div>
-        <p>DonatePage</p>
-      </div>
+      <h2>Make a Donation</h2>
+      <form onSubmit={addDonerDetails}>
+        <input value={donerFirstName} onChange={(e)=> setDonerFirstName(e.target.value)} type="text" />
+        <input type="submit" />
+      </form>
+
+      <h2>Doner Details</h2>
+      <pre>{JSON.stringify(donerDetails)}</pre>
+      
     </div>
   );
 }
