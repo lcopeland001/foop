@@ -123,6 +123,10 @@ Customize this ReadMe and the code comments in this project to read less like a 
 
 -- To Do list -- 
 [] SCOPE
+  [] Description
+  [] Wireframs
+  [] Database
+  [] 
 
 [x] Change Title name
 [x] Add pages to nav bar
@@ -131,7 +135,10 @@ Customize this ReadMe and the code comments in this project to read less like a 
     - Get Invoulved
     - Contact
     - Donate
-[] 
+
+[] CSS
+  []
+ 
 [] Home (Logo)
   [X] Display HomePage on DOM
     - Create component
@@ -141,14 +148,13 @@ Customize this ReadMe and the code comments in this project to read less like a 
     [] donate card
     [] Pool Photo
     [] Background
-  [] CSS
+
 [] About us
   [x] - Display Contact on DOM
     - Create component
     - Add to App.jsx
     - Conenct component to nav bar
   [] Add content
-    [] CSS
 
 [] Get Involved
   [x] Display Get Involved on DOM
@@ -156,41 +162,56 @@ Customize this ReadMe and the code comments in this project to read less like a 
     - Add to App.jsx
     - Conenct component to nav bar
   [] Add content
+
 [] Contact
   [x] - Display Contact on DOM
     - Create component
     - Add to App.jsx
     - Conenct component to nav bar
   [] Add content
-  [] CSS
 
 [] Donate
   [x] Display Donate on DOM
-    - Create component
-    - Add to App.jsx
-    - Conenct component to nav bar
+    [x] Create component
+    [x] Add to App.jsx
+    [x] Conenct component to nav bar
   [] Add content
-  [] CSS
-  [] Create form for donation page
-  [x] Create Reducer component
-  [] Create Saga component
+    [] Create form for donation page
+    [] Payment API
+  [x] Create reducer component
+  [] Create saga component
     [x] POST
     [x] GET
     [] PUT
     [] DELETE 
+    [] add to root saga
   [] Create Server Routes
     [x] POST
     [] GET
     [] PUT
     [] DELETE 
-  [] Payment API
+    [x] Add route to server.js
+  
 
-  [x] SQL
-    [x] user
-    [x] doner_details
-    [x] user_details
-    [x] schalar_details
+[x] SQL
+  [x] user
+  [x] doner_details
+  [x] user_details
+  [x] schalar_details
 
 
 // Step 1: Create a new reducer and export it
+
+SAGAS
+
+// rootSaga is the primary saga.
+// It bundles up all of the other sagas so our project can use them.
+// This is imported in index.js as rootSaga
+// some sagas trigger other sagas, as an example
+// the registration triggers a login
+// and login triggers setting the user
+
 // SAGA STEP 1: Create a saga file and export it
+// SAGA STEP 2: Import saga into root saga
+// SAGA STEP 3: Add new sagas to export default
+
