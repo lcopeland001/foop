@@ -184,7 +184,7 @@ Customize this ReadMe and the code comments in this project to read less like a 
     [x] GET
     [] PUT
     [] DELETE 
-    [] add to root saga
+    [x] add to root saga
   [] Create Server Routes
     [x] POST
     [] GET
