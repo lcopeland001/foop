@@ -45,6 +45,7 @@ function DonatePage() {
         <input value={donerLastName} onChange={(e)=> setDonerLastName(e.target.value)} type="text" />
         <input value={donerEmail} onChange={(e)=> setDonerEmail(e.target.value)} type="text" />
         <input value={donerPhone} onChange={(e)=> setDonerPhone(e.target.value)} type="text" />
+        <input value={donerCompany} onChange={(e)=> setDonerCompany(e.target.value)} type="text" />
         <input type="submit" />
       </form>
 
