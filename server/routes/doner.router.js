@@ -20,6 +20,20 @@ router.get('/', (req, res) => {
     }
 });
 
+router.get('/id', (req, res) => {
+    if (req.isAuthenticated()) {
+        let queryText = `SELECT * FROM "doner_details" WHERE "user_id" = $1 AND "id" = $2;`;
+        pool.query(queryText, [req.user.id, req.params.id]).then((result) => {
+            res.send(result.rows[0]); 
+        }).catch((error) => {
+            console.log(error);
+            res.sendStatus(500);
+        });
+    } else {
+        res.sendStatus(403);
+    }
+});
+
 // POST Route - add doner information 
 
 router.post("/", (req, res) => {

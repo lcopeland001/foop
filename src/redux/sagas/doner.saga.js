@@ -29,16 +29,6 @@ function* addDoner(action) {
     }
 }
 
-// function* addDoner(action) {
-//     try {
-//         const details = yield axios.post(`/api/doner`, action.payload);
-//         console.log("Doner Details coming back fromm server:", details.data.id);
-//     } catch (e) {
-//         console.log(e);
-//         alert("Something went wrong.");
-//     }
-// }
-
 
 // UPDATE
 
