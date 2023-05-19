@@ -6,11 +6,10 @@ const pool = require('../modules/pool');
 
 
 // POST Route - add doner information 
-router.post('/', (req, res)=> {
-    console.log('doner POST route');
-    console.log(req.body);
 
-    const queryText = `INSERT INTO "doner_details" ("doner_first_name", "doner_last_name", "doner_email", "doner_phone", "doner_company")
+router.post("/", (req, res) => {
+    if (req.isAuthenticated()) {
+        const queryText = `INSERT INTO "doner_details" ("doner_first_name", "doner_last_name", "doner_email", "doner_phone", "doner_company")
     VALUES ($1, $2, $3, $4, $5);`;
     pool.query(queryText, [
         req.body.doner_first_name, 
@@ -24,6 +23,9 @@ router.post('/', (req, res)=> {
         console.log(e);
         res.sendStatus(500);
     });
-})
+    }else {
+        res.sendStatus(403);
+    }
+});
 
 module.exports = router;

@@ -11,6 +11,10 @@ import axios from 'axios';
 function DonatePage() {
   const donerDetails = useSelector(store => store.donerReducer);
   const [donerFirstName, setDonerFirstName] = useState('');
+  const [donerLastName, setDonerLastName] = useState('');
+  const [donerEmail, setDonerEmail] = useState('');
+  const [donerPhone, setDonerPhone] = useState('');
+  const [donerCompany, setDonerCompany] = useState('');
   
   const dispatch = useDispatch();
 
@@ -25,7 +29,11 @@ function DonatePage() {
   const addDonerDetails = (e) => {
     e.preventDefault();
     dispatch({ type: 'ADD_DONER', 
-                payload: donerFirstName 
+                payload: donerFirstName,
+                payload: donerLastName, 
+                payload: donerEmail, 
+                payload: donerPhone, 
+                payload: donerCompany 
               });
   };
 
@@ -34,12 +42,15 @@ function DonatePage() {
       <h2>Make a Donation</h2>
       <form onSubmit={addDonerDetails}>
         <input value={donerFirstName} onChange={(e)=> setDonerFirstName(e.target.value)} type="text" />
+        <input value={donerLastName} onChange={(e)=> setDonerLastName(e.target.value)} type="text" />
+        <input value={donerEmail} onChange={(e)=> setDonerEmail(e.target.value)} type="text" />
+        <input value={donerPhone} onChange={(e)=> setDonerPhone(e.target.value)} type="text" />
         <input type="submit" />
       </form>
 
       <h2>Doner Details</h2>
       <pre>{JSON.stringify(donerDetails)}</pre>
-      
+
     </div>
   );
 }
