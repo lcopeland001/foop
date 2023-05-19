@@ -41,11 +41,16 @@ function DonatePage() {
     <div className="container">
       <h2>Make a Donation</h2>
       <form onSubmit={addDonerDetails}>
+        <h3>First Name</h3>
         <input value={donerFirstName} onChange={(e)=> setDonerFirstName(e.target.value)} type="text" />
+        <h3>Last Name</h3>
         <input value={donerLastName} onChange={(e)=> setDonerLastName(e.target.value)} type="text" />
+        <h3>Email</h3>
         <input value={donerEmail} onChange={(e)=> setDonerEmail(e.target.value)} type="text" />
+        <h3>Phone Number</h3>
         <input value={donerPhone} onChange={(e)=> setDonerPhone(e.target.value)} type="text" />
-        <input value={donerCompany} onChange={(e)=> setDonerCompany(e.target.value)} type="text" />
+        <h3>Company</h3>
+        <input value1={donerCompany} onChange={(e)=> setDonerCompany(e.target.value)} type="text" />
         <input type="submit" />
       </form>
 
